@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="mobile-panel" class="mobile-panel show">
+        <ul>
+            <li><a href="#">Школа вокалу</a></li>
+            <li><a href="#">Урок вокалу</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+
+    </div>
+    <div class="page-shadow"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Школа вокалу</a></li>
+                    <li><a href="#">Урок вокалу</a></li>
+                    <li><a href="#">Послуги</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="burger" class="burger">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <section id="home" class="home">
+
+        <div class="home-content">
+            <h1>
+                Пробний урок гри на гитарі 350грн
+            </h1>
+            <div class="text">
+                Пробне заняття - це повноцінний урок тривалістю 50 хвилин.
+            </div>
+            <button class="btn js-btn-dialog" type="button">Записатися</button>
+            <dialog id="dialog">
+                <button class="close-dialog" type="button" id="dialog-close"></button>
+                <form action="#" method="dialog" id="dialog-form" class="form">
+                    <h4>Записатися на пробний урок</h4>
+                    <label for="user-name">Ваше ім'я</label>
+                    <input type="text" placeholder="Ваше ім'я" name="name" id="user-name">
+                    <label for="phone">Ваш номер</label>
+                    <input type="text" placeholder="Ваш номер" name="phone" id="phone">
+                    <button id="dialog-submit" class="btn" type="submit">Записатися</button>
+                </form>
+
+            </dialog>
+        </div>
+
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">
+                Ми все обміркували!
+            </div>
+            <h2>Ефективні уроки гри на гітарі в Києві та онлайн</h2>
+            <div class="div-grid">
+                <div class="div-grid-item first">
+                    <h3>В якому віці краще починати навчання?</h3>
+                    Віддати дитину в приватну музичну школу можна вже в 4-5 років. Діти в цьому віці вивчають і
+                    запам'ятовують все просто
+                    феноменально швидко. Головне, щоб дитина вже могла концентруватися на навчанні. Для уроків гітари
+                    також має велике
+                    значення такий нюанс - чи вистачить сил пальчикам притиснути струни до грифа гітари. Для дітей є
+                    спецальні розміри
+                    гітари: четвертинка, половинка і три чверті. Для початку струни можна поставити нейлонові. Отже,
+                    вийшло взяти перший
+                    акорд? Далі все піде як по маслу;
+                </div>
+                <div class="div-grid-item two">
+                    <h3>Чи варто навчатись дорослим?</h3>
+                    Зрозуміло! З хорошим педагогом вже в кінці першого уроку можна навчиться акомпанувати собі в пісні з
+                    трьох акордів!
+                </div>
+                <div class="div-grid-item three">
+                    <img src="img/guitar_1.jpg" alt="Гітара">
+                </div>
+                <div class="div-grid-item four">
+                    <h3>Вибір гітари і напрямку</h3>
+                    Поширені види гітар: класична, акустична, полуакустична, електрична. Також в нашій школі ми навчаємо
+                    грі на укулеле і
+                    бас-гітарі.
+                </div>
+                <div class="div-grid-item five">
+                    <h3>Ви вчите грати по нотах чи акорди? Чи треба знати сольфеджіо</h3>
+                    Залежить від Ваших побажань. Хочете стати грамотним гітаристом, розуміти теорію, композицію та з
+                    легкістю імпровізувати
+                    – тоді музична грамота Вам необхідна.Не хочете навантажувати себе теорією – скажіть про це
+                    викладачеві, і просто
+                    розучуйте акомпанемент до улюблених творів.
+                </div>
+                <div class="div-grid-item six">
+                    <h3>Як швидше навчитись грати?</h3>
+                    Регулярно вправляйтеся самостійно і беріть уроки у досвідченого педагога. З метою економії часу,
+                    можете вибрати формат
+                    навчання на дому або онлайн.
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="teacher" class="teacher-section">
+        <div class="container">
+            <h2>Викладач</h2>
+            <div class="teacher">
+                <div class="teacher-img">
+                    <img src="img/guitar-teacher-kiev.jpg" alt="Вчитель">
+                </div>
+                <div class="description-teacher">
+                    <blockquote>
+                        " Завдяки музичним заняттям, в учня формується організованість, концентрація уваги, воля і
+                        інтерес до
+                        справи. На заняттях
+                        працюємо не тільки над технічною, але також над художньою частиною твору. Також вчимося
+                        правильно
+                        аналізувати і
+                        вирішувати необхідні завдання. Навчання грі на музичному інструменті в кінцевому підсумку
+                        повинно
+                        привести до з'єднання
+                        того, що ми відчуваємо всередині і того, що ми можемо передати. Тому я буду радий підтримати
+                        кожного
+                        учня в його
+                        подорожі в музиці з ентузіазмом і щирою дружбою. "
+                    </blockquote>
+                    <div class="education">
+                        <h3>Освіта</h3>
+                        <p>Вчительська кваліфікація, вища музична школа, Києво-Слов'янська гімназія</p>
+                    </div>
+                    <div class="experience">
+                        <h3>Досвід</h3>
+                        <p>19 років:
+                            Виступав з концертами в Україні, Італії, Ізраїлі, Туреччині.
+                            Грав з Jamala, П'єром Буссагі.
+                            Виступав на фестивалях в Україні та Європі з групою Urban Gypsy: «AlfaJazz», «JazzOpen»,
+                            «Tre Colore» (Reggia-Millia,
+                            Italy), «Guitar-Gems» (Israel), Jazz-Koktebel.
+                        </p>
+                    </div>
+                    <div class="achievement">
+                        <h3>Досягнення</h3>
+                        2 місце, конкурс Guitar Games (Ізраїль). У 2007 році на міжнародному конкурсі класичної гітари
+                        був відібраний одним з
+                        найвідоміших педагогів Європи, Паоло Пегораро, на навчання в його класі, в академії ім. Тарреги,
+                        м Порденон (Італія). В
+                        якості спеціального призу від італійського культурного центру, отримав стипендію на навчання.
+                        Учні - лаурети
+                        виконавських конкурсів
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="question" class="question">
+        <div class="container">
+            <div class="question-content">
+                <h2>Залишилися питання з приводу навчання?</h2>
+                <p>Запишіться на пробний урок гітари і дізнайтеся все з перших рук! Ми навчаємо грі на гітарі у нас в
+                    школах, а
+                    також
+                    онлайн або у Вас на дому.
+                </p>
+                <button type="button" class="btn btn-yellow js-btn-dialog" id="btn-open-form">Записатися</button>
+            </div>
+            <div class="question-img">
+                <div class="content-img">
+                    <ul>
+                        <li>Навчитесь акомпанувати собі</li>
+                        <li>Зможете грати по нотах - якщо захочете</li>
+                        <li>Навчіться підбирати і грати на слух</li>
+                        <li>Будете виступати на наших концертах</li>
+                    </ul>
+                </div>
+                <img src="img/guitar_lessons_kiev.jpg" alt="question">
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="content-footer">
+                <h3>Корисні посилання</h3>
+                <div class="links-footer">
+                    <ul>
+                        <li><a href="#">Вакансії педагогів вокалу</a></li>
+                        <li><a href="#">Уроки вокалу для дорослих</a></li>
+                        <li><a href="#">Майстер-клас з вокалу</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Відгуки</a></li>
+                        <li><a href="#">Для дітей</a></li>
+                        <li><a href="#">Новини</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Послуги</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="social">
+                <h3>У соцмережах ми викладаємо відео-уроки, майстер-класи та концерти</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
