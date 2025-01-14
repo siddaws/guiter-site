@@ -1,0 +1,43 @@
+.teacher-section {
+    margin-bottom: 150px;
+
+    h2 {
+        text-align: center;
+    }
+
+    blockquote {
+        font-style: italic;
+        margin: 0;
+        padding-left: 20px;
+        border-left: 4px solid #ccc;
+
+        line-height: 1.5;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+}
+
+.teacher {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-teacher {
+    width: 48%;
+    color: #252525;
+    font-size: 20px;
+
+    h3 {
+        margin: 10px;
+    }
+
+    .education {
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.teacher-img {
+    width: 48%;
+}

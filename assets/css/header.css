@@ -1,0 +1,135 @@
+header {
+    height: 60px;
+
+    background-color: #433b3b;
+    border-bottom: var(--primary-color) 1px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.menu {
+    height: 100%;
+
+    ul {
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        margin: 0;
+        align-items: stretch;
+
+        a {
+            align-content: center;
+            height: 100%;
+            display: inline-block;
+            align-items: center;
+            padding: 5px;
+            transition: all .3s ease;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: #dfb8b8;
+                color: var(--bg-color);
+            }
+        }
+    }
+}
+
+.links {
+    margin-left: auto;
+    align-content: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            width: 32px;
+            height: 32px;
+        }
+
+        a:hover {
+            transition: transform .3s ease;
+
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.burger {
+    display: none;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-btn);
+        top: 50%;
+        transition: all .3s ease;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-btn);
+        position: absolute;
+        transition: all .3s ease;
+    }
+
+    &::before {
+        top: 2px;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+}
+
+.burger.open {
+    span {
+        transform: scale(0);
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        top: 41%;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        bottom: 50%;
+    }
+}

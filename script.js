@@ -2,7 +2,7 @@ const dialogBtns = document.querySelectorAll('.js-btn-dialog');
 const dialog = document.getElementById('dialog');
 const dialogClose = document.getElementById('dialog-close');
 const dialogSubmit = document.getElementById('dialog-submit');
-const burger = document.getElementById('burger');
+// const burger = document.getElementById('burger');
 const mobilePanel = document.getElementById('mobile-panel');
 const clickOutside = e => {
     if (e.target === dialog) close()
@@ -50,5 +50,11 @@ const showMobileMenu = e => {
     })
 }
 
+fetch('assets/pages/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+        burger = document.getElementById('burger');
+    });
 
 burger.addEventListener('click', showMobileMenu)

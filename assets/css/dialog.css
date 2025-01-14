@@ -1,0 +1,84 @@
+dialog[open] {
+    position: fixed;
+    inset: 0;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 0;
+    z-index: 1000;
+    display: flex;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    padding: 0;
+
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+.close-dialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: background-color .3s ease;
+
+
+    &:hover {
+        background-color: var(--primary-color);
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+
+        transform: translate(-50%, -50%) rotate(-45deg);
+
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    --duration: 0.3s;
+    animation-duration: var(--duration);
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    animation-name: fadeIn;
+    animation-direction: reverse;
+}

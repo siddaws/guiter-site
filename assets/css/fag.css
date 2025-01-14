@@ -1,0 +1,58 @@
+.fag {
+    margin-bottom: 100px;
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.frequent-questions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 300px;
+}
+
+.item-outside {
+    perspective: 1000px;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.item-outside:hover .item {
+    transform: rotateY(180deg);
+}
+
+.frequent,
+.fag-question {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #0606061f;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.83);
+
+    p {
+        margin: 0;
+    }
+}
+
+.fag-question {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,34 @@
+footer {
+    background-color: var(--bg-color);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        color: whitesmoke;
+        font-size: 1.5rem;
+        width: 400px;
+    }
+
+    .links {
+        li {
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.links-footer {
+    display: flex;
+    gap: 20px;
+
+    a:hover {
+        color: var(--color-btn);
+    }
+}
